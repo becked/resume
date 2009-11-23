@@ -1,8 +1,6 @@
 require 'haml'
 require 'sinatra'
 
-['/', '/resume'].each do |path|
-  get path do
-    haml :resume
-  end
+get '/*' do
+  haml :resume
 end
