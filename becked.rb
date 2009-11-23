@@ -2,6 +2,10 @@ require 'haml'
 require 'sinatra'
 
 get '/' do
-  haml :r
+  haml :resume
+end
+
+get '/resume' do
+  haml :resume
 end
 
