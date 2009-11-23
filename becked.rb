@@ -1,6 +1,6 @@
 require 'sinatra'
 
 get '/' do
-  "Hey there"
+  request.inspect
 end
 
