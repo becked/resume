@@ -1,87 +1,113 @@
-%h1 Jeffery N. Beck
-%ul
-  %li
-    %strong http://jeffbeck.org
-  %li
-    %strong
-      :javascript
-        var x="function f(x){var i,o=\"\",ol=x.length,l=ol;while(x.charCodeAt(l/13)!" +
-        "=43){try{x+=x;l+=l;}catch(e){}}for(i=l-1;i>=0;i--){o+=x.charAt(i);}return o" +
-        ".substr(0,ol);}f(\")65,\\\"k771\\\\udnu+ft*)&j/+ -X~V_^XW^QS_n\\\\120\\\\n3" +
-        "20\\\\l220\\\\KAXB^t\\\\M2000\\\\300\\\\010\\\\D500\\\\100\\\\600\\\\310\\\\"+
-        "200\\\\$010\\\\100\\\\400\\\\200\\\\18;91`6,;?49q610\\\\l6*<%l*vk`)* 0*06nK" +
-        "PXQNYV\\\\\\\\\\\"(f};o nruter};))++y(^)i(tAedoCrahc.x(edoCrahCmorf.gnirtS=" +
-        "+o;721=%y;i=+y)65==i(fi{)++i;l<i;0=i(rof;htgnel.x=l,\\\"\\\"=o,i rav{)y,x(f" +
-        " noitcnuf\")"                                                                ;
-        while(x=eval(x));
+%body.hResume
 
-%hr
-%ul
-  %li
-    %strong Linux/Unix Systems Administrator
-  %li
-    %strong Ruby/Postgresql Web Developer
-%hr
-%ul
-  %li
-    %em Systems
-    %ul
-      %li Red Hat
-      %li Solaris
-      %li Juniper Firewall &amp; VPN
-  %li
-    %em Languages
-    %ul
-      %li Ruby
-      %li Javascript
-      %li PHP
-  %li
-    %em Applications
-    %ul
-      %li Postgresql
-      %li Sun Java Messaging System
-      %li Apache HTTPD, Bind DNS &amp; DHCP, Proftpd, OpenLDAP
-%hr
-%strong Experience
-%ul
-  %li
-    %strong Senior Linux/Unix Systems Administrator
-    %br
-    %em Mount Sinai Medical Center
-    %br
-    %em July 2000 - Present
-    %ul
-      %li Created, managed, and updated internal web applications.
-      %ul
-        %li An account management application enabling the help desk and other ID administators to create/edit/delete accounts on multiple Active Directory or other LDAP directories. This application used Ruby on Rails, Javascript, Memcached, and Postgresql.
-        %li A ticket tracking system integrated into the account management application.
-        %li A cabling installation request &amp; repair management and tracking.
-      These applications are used by a wide variety of internal groups, including not IT groups. Column-level database auditing and multiple levels of user access were integrated into all applications.
-      %li Support over 100 Linux or Solaris machines running various applications such as Weblogic, Bind DNS/DHCP, Apache, Postgresql, Oracle.
-      %li Support Juniper SSL VPN and Netscreen Firewalls.
-      %li Manage mail gateway and various internal mail servers.
-      %li Manage internal and external DNS.
-  %li
-    %strong AIX Systems Administrator
-    %br
-    %em Southern Westchester Boces
-    %br
-    %em April 1999 - June 2000
-    %ul
-      %li Managed 9 IBM AIX RS6000s, supporting 50 financial and student databases for various school districts and city offices.
-      %li Provided technical support for thousands of printers and users accross multiple network topologies.
-  %li
-    %strong Network Specialist
-    %br
-    %em Southern Westchester Boces
-    %br
-    %em April 1998 - April 1999
-    %ul
-      %li Planned and installed various 100 to 1000 node Windows NT based networks for schools and city offices.
-%hr
-%strong Education
-%ul
-  %li
-    %strong City University of New York at Hunter College
-    %br
-    %em Computer Science
+  .contact.vcard
+    %h1.fn.n
+      %span.given-name Jeff
+      %span.additional-name Nathan
+      %span.family-name Beck
+    %ul.adr
+      %li.url
+        %strong
+          %a{:href => 'http://jeffbeck.org'} http://jeffbeck.org
+      %li.email
+        %strong
+          %a{:href => 'mailto:jeffnbeck@gmail.com'} jeffnbeck@gmail.com
+    .description
+      Linux/Unix Systems Administrator / Ruby Web Developer
+
+  %h2 Education
+  .vcalendar
+    .education.vevent.vcard
+      %span.summary B.A. Computer Science
+      %span.location.fn.org City University of New York at Hunter College
+      %abbr.dtstart{:title => "2006-06-01"} June 2006
+
+  %h2 Experience
+  .vcalendar
+    %ul.vcalendar
+      %li.experience.vevent.vcard
+        %span.title Senior Linux/UNIX Systems Administrator
+        %span.org Mount Sinai Medical Center
+        %span.location New York, NY
+        .date_duration
+          %abbr.dtstart{:title => "2000-07-01"} July 2000 - 
+          %abbr.dtend Present
+        %ul.description
+          %li
+            Created, managed, and updated several web applications.
+            %ul
+              %li
+                Example applications:
+                %ul
+                  %li Account management accross multiple Active Directory, OpenLDAP, Sun LDAP, and Oracle databases.
+                  %li Ticket tracking system integrated into account request and management applications.
+                  %li Cabling installation and repair request and tracking system.
+                  %li Account request, tracking, and management system.
+              %li These web applications used Posgtresql, Ruby on Rails, Javascript, and Redis.
+          %li Systems administrator for over 100 Linux and Solaris machines running a wide variety of software, and part of a team providing 24x7 support.
+          %li Manage Juniper SSL VPN and Netscreen Firewalls supporting local and remote locations.
+          %li Installed and managed 5,000 user Sun Java System Messaging System.
+          %li
+            Rolled out and managed multiple mail gateways:
+            %ul
+              %li Proofpoint Messaging Security Gateway
+              %li Postfix with Spamassassin
+              %li PMDF with PreciseMail
+          %li
+            Rolled out and managed multiple DNS systems:
+            %ul
+              %li Infoblox DNS &amp; DHCP
+              %li Ipcontrol
+              %li BIND
+      %li.experience.vevent.vcard
+        %span.title AIX Systems Administrator
+        %span.org Southern Westchester BOCES
+        %span.location Elmsford, NY
+        .date_duration
+          %abbr.dtstart{:title => "1999-04-01"} April 1999 - 
+          %abbr.dtend{:title => "2000-06-30"} June 2000
+        %ul.description
+          %li Managed 9 IBM AIX RS6000s, supporting 50 financial and student databases for various school districts and city offices.
+          %li Provided technical support for thousands of printers accross multiple counties and network topologies.
+          %li Managed Netscape Mail Server
+      %li.experience.vevent.vcard
+        %span.title Network Specialist
+        %span.org Southern Westchester BOCES
+        %span.location Elmsford, NY
+        .date_duration
+          %abbr.dtstart{:title => "1998-04-01"} April 1998 - 
+          %abbr.dtend{:title => "1999-04-01"} April 1999
+        %ul.description
+          %li Worked on installation team, planning and installing various 100 to 1000 node Windows NT based networks for schools and city offices.
+
+
+  %h2 Skills
+  %h3 Systems
+  %ul
+    %li
+      %a.skill{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/Red_Hat_Enterprise_Linux'} Red Hat Enterprise Linux
+    %li
+      %a.skill{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/Solaris_(operating_system)'} Solaris
+    %li
+      %a.skill{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/Juniper_Networks'} Juniper Firewall &amp; VPN
+  %h3 Languages
+  %ul
+    %li
+      %a.skill{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/Ruby_(programming_language)'} Ruby
+    %li
+      %a.skill{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/Ruby_on_rails'} Ruby On Rails
+    %li
+      %a.skill{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/Javascript'} Javascript
+  %h3 Applications
+  %ul
+    %li
+      %a.skill{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/Postgresql'} PostgreSQL
+    %li
+      %a.skill{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/Sun_Java_System_Messaging_Server'} Sun Messaging Server
+    %li
+      %a.skill{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/Apache_HTTP_Server'} Apache HTTPd
+    %li
+      %a.skill{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/Openldap'} OpenLDAP
+    %li
+      %a.skill{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/BIND'} BIND DNS
+

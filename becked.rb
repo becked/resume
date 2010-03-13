@@ -1,6 +1,11 @@
 require 'haml'
 require 'sinatra'
 
-get '/*' do
+get '/' do
+  haml :index
+end
+
+
+get '/resume*' do
   haml :resume
 end
