@@ -1,5 +1,8 @@
+!!! 5
 %html
   %head
-    %title
-      Jeff Beck
-  = yield
+    %link{ :rel => 'stylesheet', :type => 'text/css', :href => '/stylesheets/reset.css' }
+    %link{ :rel => 'stylesheet', :type => 'text/css', :href => '/stylesheets/becked.css' }
+    %title jeffbeck.net
+  %body
+    = yield

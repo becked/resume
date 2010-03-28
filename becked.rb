@@ -2,7 +2,8 @@ require 'haml'
 require 'sinatra'
 
 get '/' do
-  haml :index
+  #haml :index
+  haml :resume
 end
 
 

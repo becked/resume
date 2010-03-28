@@ -1,113 +1,122 @@
-%body.hResume
-
+.hResume
   .contact.vcard
     %h1.fn.n
-      %span.given-name Jeff
+      %span.given-name Jeffery
       %span.additional-name Nathan
       %span.family-name Beck
+    .description
+      Linux/Unix Systems Administrator &amp; Ruby Web Developer
     %ul.adr
       %li.url
-        %strong
-          %a{:href => 'http://jeffbeck.org'} http://jeffbeck.org
+        %a{:href => 'http://jeffbeck.org'} http://jeffbeck.org
       %li.email
-        %strong
-          %a{:href => 'mailto:jeffnbeck@gmail.com'} jeffnbeck@gmail.com
-    .description
-      Linux/Unix Systems Administrator / Ruby Web Developer
+        %a{:href => 'mailto:jeffnbeck@gmail.com'} jeffnbeck@gmail.com
 
-  %h2 Education
-  .vcalendar
-    .education.vevent.vcard
-      %span.summary B.A. Computer Science
-      %span.location.fn.org City University of New York at Hunter College
-      %abbr.dtstart{:title => "2006-06-01"} June 2006
+  .skills.resumeSection
+    %h2 Skills
+    .resumeSubSection
+      %h3 Programming
+      %ul
+        %li
+          %a{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/Ruby_(programming_language)'} Ruby
+        %li
+          %a{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/Ruby_on_rails'} Ruby On Rails
+        %li
+          %a{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/Javascript'} Javascript
+      %h3 Servers
+      %ul
+        %li
+          %a{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/Postgresql'} PostgreSQL
+        %li
+          %a{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/Sun_Java_System_Messaging_Server'} Sun Messaging Server
+        %li
+          %a{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/Apache_HTTP_Server'} Apache HTTPD
+        %li
+          %a{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/Openldap'} OpenLDAP
+        %li
+          %a{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/Redis_(data_store)'} Redis
+        %li
+          %a{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/BIND'} BIND DNS/DHCP
+      %h3 Systems
+      %ul
+        %li
+          %a{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/Red_Hat_Enterprise_Linux'} RedHat
+        %li
+          %a{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/Solaris_(operating_system)'} Solaris
+        %li
+          %a{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/Juniper_Networks'} Juniper Firewall &amp; VPN
 
-  %h2 Experience
-  .vcalendar
-    %ul.vcalendar
-      %li.experience.vevent.vcard
-        %span.title Senior Linux/UNIX Systems Administrator
-        %span.org Mount Sinai Medical Center
-        %span.location New York, NY
-        .date_duration
-          %abbr.dtstart{:title => "2000-07-01"} July 2000 - 
-          %abbr.dtend Present
-        %ul.description
-          %li
-            Created, managed, and updated several web applications.
-            %ul
-              %li
-                Example applications:
+
+  .experience
+    .resumeSection
+      %h2 Experience
+      .vcalendar
+        %ul.vcalendar
+          %li.experience.vevent.vcard
+            .vcardHeader
+              %span.title Senior Linux/UNIX Systems Administrator
+              %span.date_duration
+                %abbr.dtstart{:title => "2000-07-01"} July 2000 - 
+                %abbr.dtend Present
+            .vcardAdditionalHeader
+              %span.org Mount Sinai Medical Center
+              %span.location New York, NY
+            %ul.description
+              %li.experiment
+                Created, managed, and updated several web applications.
                 %ul
-                  %li Account management accross multiple Active Directory, OpenLDAP, Sun LDAP, and Oracle databases.
-                  %li Ticket tracking system integrated into account request and management applications.
-                  %li Cabling installation and repair request and tracking system.
-                  %li Account request, tracking, and management system.
-              %li These web applications used Posgtresql, Ruby on Rails, Javascript, and Redis.
-          %li Systems administrator for over 100 Linux and Solaris machines running a wide variety of software, and part of a team providing 24x7 support.
-          %li Manage Juniper SSL VPN and Netscreen Firewalls supporting local and remote locations.
-          %li Installed and managed 5,000 user Sun Java System Messaging System.
-          %li
-            Rolled out and managed multiple mail gateways:
-            %ul
-              %li Proofpoint Messaging Security Gateway
-              %li Postfix with Spamassassin
-              %li PMDF with PreciseMail
-          %li
-            Rolled out and managed multiple DNS systems:
-            %ul
-              %li Infoblox DNS &amp; DHCP
-              %li Ipcontrol
-              %li BIND
-      %li.experience.vevent.vcard
-        %span.title AIX Systems Administrator
-        %span.org Southern Westchester BOCES
-        %span.location Elmsford, NY
-        .date_duration
-          %abbr.dtstart{:title => "1999-04-01"} April 1999 - 
-          %abbr.dtend{:title => "2000-06-30"} June 2000
-        %ul.description
-          %li Managed 9 IBM AIX RS6000s, supporting 50 financial and student databases for various school districts and city offices.
-          %li Provided technical support for thousands of printers accross multiple counties and network topologies.
-          %li Managed Netscape Mail Server
-      %li.experience.vevent.vcard
-        %span.title Network Specialist
-        %span.org Southern Westchester BOCES
-        %span.location Elmsford, NY
-        .date_duration
-          %abbr.dtstart{:title => "1998-04-01"} April 1998 - 
-          %abbr.dtend{:title => "1999-04-01"} April 1999
-        %ul.description
-          %li Worked on installation team, planning and installing various 100 to 1000 node Windows NT based networks for schools and city offices.
+                  %li
+                    %strong Key applications:
+                    .resumeSubSection
+                      %ul
+                        %li - Account management accross multiple Active Directory, OpenLDAP, Sun LDAP, and Oracle databases.
+                        %li - Ticket tracking system integrated into the account request and management applications.
+                        %li - Cabling installation and repair request and tracking system.
+                        %li - Account request, tracking, and management system.
+                  %li These web applications used Posgtresql, Ruby on Rails, Javascript, and Redis.
+              %li Systems administrator for over 100 Linux and Solaris machines running a wide variety of software, and part of a team providing 24x7 support.
+              %li Manage Juniper SSL VPN and Netscreen Firewalls supporting local and remote locations.
+              %li Installed and managed 5,000 user Sun Java System Messaging System.
+              %li
+                Rolled out and managed multiple mail gateways:
+                %ul
+                  %li Proofpoint Messaging Security Gateway
+                  %li Postfix with Spamassassin
+                  %li PMDF with PreciseMail
+              %li.experiment
+                Rolled out and managed multiple DNS systems:
+                .resumeSubSection
+                  %ul
+                    %li - Infoblox DNS &amp; DHCP
+                    %li - Ipcontrol
+                    %li - BIND
+          %li.experience.vevent.vcard
+            %span.title AIX Systems Administrator
+            %span.org Southern Westchester BOCES
+            %span.location Elmsford, NY
+            .date_duration
+              %abbr.dtstart{:title => "1999-04-01"} April 1999 - 
+              %abbr.dtend{:title => "2000-06-30"} June 2000
+            %ul.description
+              %li Managed 9 IBM AIX RS6000s, supporting 50 financial and student databases for various school districts and city offices.
+              %li Provided technical support for thousands of printers accross multiple counties and network topologies.
+              %li Managed Netscape Mail Server
+          %li.experience.vevent.vcard
+            %span.title Network Specialist
+            %span.org Southern Westchester BOCES
+            %span.location Elmsford, NY
+            .date_duration
+              %abbr.dtstart{:title => "1998-04-01"} April 1998 - 
+              %abbr.dtend{:title => "1999-04-01"} April 1999
+            %ul.description
+              %li Worked on installation team, planning and installing various 100 to 1000 node Windows NT based networks for schools and city offices.
+  
 
-
-  %h2 Skills
-  %h3 Systems
-  %ul
-    %li
-      %a.skill{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/Red_Hat_Enterprise_Linux'} Red Hat Enterprise Linux
-    %li
-      %a.skill{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/Solaris_(operating_system)'} Solaris
-    %li
-      %a.skill{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/Juniper_Networks'} Juniper Firewall &amp; VPN
-  %h3 Languages
-  %ul
-    %li
-      %a.skill{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/Ruby_(programming_language)'} Ruby
-    %li
-      %a.skill{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/Ruby_on_rails'} Ruby On Rails
-    %li
-      %a.skill{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/Javascript'} Javascript
-  %h3 Applications
-  %ul
-    %li
-      %a.skill{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/Postgresql'} PostgreSQL
-    %li
-      %a.skill{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/Sun_Java_System_Messaging_Server'} Sun Messaging Server
-    %li
-      %a.skill{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/Apache_HTTP_Server'} Apache HTTPd
-    %li
-      %a.skill{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/Openldap'} OpenLDAP
-    %li
-      %a.skill{:rel => 'tag', :href => 'http://en.wikipedia.org/wiki/BIND'} BIND DNS
+  .resumeSection
+    %h2 Education
+    .vcalendar
+      .education.vevent.vcard
+        %span.summary B.A. Computer Science
+        %span.location.fn.org City University of New York at Hunter College
+        %abbr.dtstart{:title => "2006-06-01"} June 2006
 
