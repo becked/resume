@@ -1,0 +1,87 @@
+body {
+  line-height: 1.2;
+}
+
+.contact {
+  text-align: center;
+}
+  .contact .fn {
+    font-size: xx-large;
+  }
+  .contact .description {
+    font-style: italic;
+  }
+
+ul.adr {
+  list-style-type: none;
+  display: inline;
+}
+  ul.adr li {
+    display: inline;
+    border-right: 1px solid black;
+    padding-left: 4px;
+  }
+  ul.adr li:last-child {
+    border: none;
+  }
+
+.resumeSection {
+  margin: 40px;
+  border-top: solid 1px black;
+}
+  .resumeSection h2 {
+    font-size: x-large;
+  }
+  .resumeSection h3 {
+    font-size: large;
+  }
+  .resumeSection .resumeSubSection {
+    margin: 7px;
+  }
+
+.skills ul {
+  list-style-type: none;
+  display: inline;
+  line-height: 1.5;
+}
+  .skills li {
+    display: inline;
+    border-right: 1px solid black;
+    padding-left: 4px;
+  }
+  .skills li:last-child {
+    border: none;
+  }
+
+.experience {
+  margin: 7px;
+}
+  .experience .vcardHeader {
+    line-height: 1.5;
+  }
+  .experience .vcardAdditionalHeader {
+    line-height: 1.5;
+  }
+  .experience .title {
+    font-weight: bold;
+  }
+  .experience .org {
+    font-style: italic;
+  }
+  .experience .location {
+    font-style: italic;
+  }
+  .experience .date_duration {
+    font-style: italic;
+  }
+  .experience .description {
+    margin: 7px;
+    padding-left: 20px;
+  }
+    .experience .description li {
+      list-style-type: disc;
+      margin-top: 3px;
+    }
+    .experience .experiment li {
+      list-style-type: none;
+    }
