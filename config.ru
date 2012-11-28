@@ -1,3 +1,7 @@
 require 'rubygems'
-require 'becked'
+require 'bundler'
+
+Bundler.require
+
+require 'resume'
 run Sinatra::Application
