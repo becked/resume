@@ -1,12 +1,12 @@
+require 'sinatra/base'
 require 'haml'
-require 'sinatra'
-
-get '/' do
-  #haml :index
-  haml :resume
-end
 
 
-get '/resume*' do
-  haml :resume
+class Resume < Sinatra::Base
+  get '/' do
+    haml :resume
+  end
+  get '/resume*' do
+    haml :resume
+  end
 end

@@ -4,4 +4,5 @@ require 'bundler'
 Bundler.require
 
 require './resume'
-run Sinatra::Application
+#run Sinatra::Application
+run Resume
